@@ -94,3 +94,12 @@ footer {
     color: #f15b31;
     font-weight: 700;
 }
+
+.reset {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    padding: 8px 20px;
+    background-color: #00a6b3;
+    color: white;
+    cursor: pointer;
+}

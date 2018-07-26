@@ -1,3 +1,4 @@
+
 var cards = [
     {
         rank: "queen",
@@ -51,5 +52,17 @@ var createBoard = function() {
         document.getElementById('game-board').appendChild(cardElement);
     }
 };
+
+var resetGame = function() {
+    cardsInPlay = [];
+    var cardElements = document.getElementById("game-board");
+    while (cardElements.firstChild) {
+        cardElements.removeChild(cardElements.firstChild);
+    }
+    createBoard();
+};
+
+var resetButton = document.querySelector(".reset");
+resetButton.addEventListener('click', resetGame);
 
 createBoard();
